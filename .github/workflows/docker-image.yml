@@ -28,11 +28,12 @@ jobs:
     - name: Build docker image
       run : |
         docker build -t gerardodev25/docker-grapql:0.0.2 .
+        docker build -t gerardodev25/docker-grapql:latest .
     
     - name: Push docker image
       run : |
         docker push gerardodev25/docker-grapql:0.0.2
-    
+        docker push gerardodev25/docker-grapql:latest
     
     
     
